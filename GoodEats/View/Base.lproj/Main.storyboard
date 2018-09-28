@@ -129,11 +129,62 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="KXr-sR-djO" id="4zK-77-bSe"/>
+                        <segue destination="1aC-Bw-QcM" kind="show" identifier="toRecipeSelection" id="x8N-2c-fTK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z5-dH-rLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1680.8" y="-582.45877061469275"/>
+        </scene>
+        <!--Recipe DetailVC-->
+        <scene sceneID="dT2-Tv-SMK">
+            <objects>
+                <viewController id="1aC-Bw-QcM" customClass="RecipeDetailVC" customModule="GoodEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Og-UM-Pkw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandwich6" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-8n-OBZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="1Mw-gQ-3Vm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-5Y-883">
+                                <rect key="frame" x="139" y="323" width="97" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-uC-W2r">
+                                <rect key="frame" x="20" y="370" width="335" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zYV-uC-W2r" firstAttribute="top" secondItem="bzf-5Y-883" secondAttribute="bottom" constant="18" id="0k6-me-RXG"/>
+                            <constraint firstItem="kkW-8n-OBZ" firstAttribute="top" secondItem="lwf-3B-TB2" secondAttribute="top" id="4oO-aj-cQt"/>
+                            <constraint firstItem="zYV-uC-W2r" firstAttribute="leading" secondItem="lwf-3B-TB2" secondAttribute="leading" constant="20" id="F8q-W6-t2G"/>
+                            <constraint firstItem="bzf-5Y-883" firstAttribute="top" secondItem="kkW-8n-OBZ" secondAttribute="bottom" constant="34" id="KD2-nv-O4Q"/>
+                            <constraint firstItem="bzf-5Y-883" firstAttribute="centerX" secondItem="7Og-UM-Pkw" secondAttribute="centerX" id="MZM-Nc-ihZ"/>
+                            <constraint firstItem="lwf-3B-TB2" firstAttribute="trailing" secondItem="zYV-uC-W2r" secondAttribute="trailing" constant="20" id="frt-Ov-VZR"/>
+                            <constraint firstItem="kkW-8n-OBZ" firstAttribute="trailing" secondItem="lwf-3B-TB2" secondAttribute="trailing" id="oj2-kl-SuD"/>
+                            <constraint firstItem="kkW-8n-OBZ" firstAttribute="leading" secondItem="lwf-3B-TB2" secondAttribute="leading" id="y1k-2w-bjM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lwf-3B-TB2"/>
+                    </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="kkW-8n-OBZ" id="Sxc-qv-4al"/>
+                        <outlet property="recipeInstructions" destination="zYV-uC-W2r" id="NIv-f8-laH"/>
+                        <outlet property="recipeTitle" destination="bzf-5Y-883" id="RE4-gg-12v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGn-Py-z3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461.5999999999999" y="-581.55922038980509"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wq8-rc-I9e">
@@ -157,5 +208,6 @@
     <resources>
         <image name="pasta2" width="634" height="951"/>
         <image name="sandwich4" width="927" height="740"/>
+        <image name="sandwich6" width="1050" height="700"/>
     </resources>
 </document>

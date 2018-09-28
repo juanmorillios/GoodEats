@@ -9,6 +9,7 @@
 import UIKit
 
 class RecipeCell: UICollectionViewCell {
+    
     @IBOutlet weak var recipeImg: UIImageView!
     
     override func awakeFromNib() {
@@ -19,6 +20,5 @@ class RecipeCell: UICollectionViewCell {
     func configureCell(recipe: Recipe) {
         recipeImg.image = UIImage(named: recipe.imageName)
     }
-    
     
 }

@@ -10,7 +10,6 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var myTableView: UITableView!
     
     let data = DataSet()
@@ -18,10 +17,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         myTableView.delegate = self
         myTableView.dataSource = self
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

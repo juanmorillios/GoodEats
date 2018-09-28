@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C3EDC44215E799D001F7C25 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3EDC43215E799D001F7C25 /* RecipeCell.swift */; };
+		1C3EDC46215E918E001F7C25 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3EDC45215E918E001F7C25 /* RecipeDetailVC.swift */; };
 		1C761B25215D739900F5A13D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C761B24215D739900F5A13D /* CategoryCell.swift */; };
 		1C761B27215D7AC500F5A13D /* RecipiesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C761B26215D7AC500F5A13D /* RecipiesSelectionVC.swift */; };
 		1CE35B1E215D215A0077A020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE35B1D215D215A0077A020 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1C3EDC43215E799D001F7C25 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		1C3EDC45215E918E001F7C25 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 		1C761B24215D739900F5A13D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		1C761B26215D7AC500F5A13D /* RecipiesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesSelectionVC.swift; sourceTree = "<group>"; };
 		1CE35B1A215D215A0077A020 /* GoodEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,10 +114,7 @@
 				1CE35B4B215D21630077A020 /* Model */,
 				1CE35B4C215D21690077A020 /* View */,
 				1CE35B4D215D216F0077A020 /* Controller */,
-				1CE35B1D215D215A0077A020 /* AppDelegate.swift */,
-				1CE35B21215D215A0077A020 /* Main.storyboard */,
 				1CE35B24215D215B0077A020 /* Assets.xcassets */,
-				1CE35B26215D215B0077A020 /* LaunchScreen.storyboard */,
 				1CE35B29215D215B0077A020 /* Info.plist */,
 			);
 			path = GoodEats;
@@ -152,6 +151,8 @@
 		1CE35B4C215D21690077A020 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1CE35B21215D215A0077A020 /* Main.storyboard */,
+				1CE35B26215D215B0077A020 /* LaunchScreen.storyboard */,
 				1C761B24215D739900F5A13D /* CategoryCell.swift */,
 				1C3EDC43215E799D001F7C25 /* RecipeCell.swift */,
 			);
@@ -161,8 +162,10 @@
 		1CE35B4D215D216F0077A020 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1CE35B1D215D215A0077A020 /* AppDelegate.swift */,
 				1CE35B1F215D215A0077A020 /* HomeVC.swift */,
 				1C761B26215D7AC500F5A13D /* RecipiesSelectionVC.swift */,
+				1C3EDC45215E918E001F7C25 /* RecipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3EDC46215E918E001F7C25 /* RecipeDetailVC.swift in Sources */,
 				1CE35B20215D215A0077A020 /* HomeVC.swift in Sources */,
 				1C761B27215D7AC500F5A13D /* RecipiesSelectionVC.swift in Sources */,
 				1CE35B53215D22210077A020 /* DataSet.swift in Sources */,
