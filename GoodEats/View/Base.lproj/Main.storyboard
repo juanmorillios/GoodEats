@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="074-kX-hAy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="074-kX-hAy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeVC-->
+        <!--GoodEats-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="GoodEats" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-cO-P9B">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="D5O-W7-gxX" customClass="CategoryCell" customModule="GoodEats" customModuleProvider="target">
@@ -57,6 +57,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IfC-cO-P9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fzx-qB-vAC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IfC-cO-P9B" secondAttribute="bottom" id="mGA-cZ-4Wb"/>
@@ -65,7 +66,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EN0-Y1-H9m"/>
+                    <navigationItem key="navigationItem" title="GoodEats" id="EN0-Y1-H9m">
+                        <barButtonItem key="backBarButtonItem" title=" " id="dcg-Ci-kpC"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="IfC-cO-P9B" id="fro-yk-rCC"/>
                         <segue destination="wME-Bp-XU4" kind="show" identifier="toRecipesSelection" id="A3y-ub-ZvO"/>
@@ -119,6 +122,7 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KXr-sR-djO" firstAttribute="leading" secondItem="92S-uG-QHR" secondAttribute="leading" id="5Tg-h6-g8U"/>
                             <constraint firstItem="KXr-sR-djO" firstAttribute="top" secondItem="92S-uG-QHR" secondAttribute="top" id="Gbu-Gx-6o0"/>
@@ -145,25 +149,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandwich6" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-8n-OBZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="225"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="1Mw-gQ-3Vm"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-5Y-883">
-                                <rect key="frame" x="139" y="323" width="97" height="29"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="130" y="375" width="115.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-uC-W2r">
-                                <rect key="frame" x="20" y="370" width="335" height="26"/>
+                                <rect key="frame" x="20" y="422" width="335" height="26"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zYV-uC-W2r" firstAttribute="top" secondItem="bzf-5Y-883" secondAttribute="bottom" constant="18" id="0k6-me-RXG"/>
                             <constraint firstItem="kkW-8n-OBZ" firstAttribute="top" secondItem="lwf-3B-TB2" secondAttribute="top" id="4oO-aj-cQt"/>
@@ -191,9 +196,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="074-kX-hAy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PNz-sp-dj2">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PNz-sp-dj2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0099370023235678673" green="0.62820369005203247" blue="0.50483733415603638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.76144838329999998" blue="0.26858246330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
