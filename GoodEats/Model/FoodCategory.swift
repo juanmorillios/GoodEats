@@ -1,10 +1,5 @@
-//
-//  FoodCategory.swift
-//  GoodEats
-//
-//  Created by Jmorillo on 27/9/18.
-//  Copyright © 2018 MorilloApps. All rights reserved.
-//
+// GoodEats app by Juan Morillo
+// Copyright © 2018 MorilloApps.
 
 import Foundation
 
