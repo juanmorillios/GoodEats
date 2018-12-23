@@ -4,10 +4,9 @@
 
 ## Small application in which I try to clone the Glovo app, in this first stage I have implemented the structure of the application.
 
-***To present the different categories I'm using UITableView, when the user interacts with the category, it shows all the corresponding content in a UICollectionView.
+To present the different categories I'm using UITableView, when the user interacts with the category, it shows all the corresponding content in a UICollectionView.***
 
-***Once you have selected the category, you will be able to see the detail of each element of the category.
-
+Once you have selected the category, you will be able to see the detail of each element of the category
 
 **For the second stage of application development, I am considering applying filters, sharing recipes through social networks, displaying more information in the detail view.**
 
@@ -19,16 +18,11 @@
 ## GoodEats In Action.
 ![Imgur](https://i.imgur.com/cdCZVKj.gif)
 
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-
 ## ✉️ Contact
 
 For comments write to [jmorillos@uoc.edu](jmorillos@uoc.edu).
 
 ## License
-
 Copyright
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,3 +36,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
