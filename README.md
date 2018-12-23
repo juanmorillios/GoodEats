@@ -4,9 +4,9 @@
 
 ## Small application in which I try to clone the Glovo app, in this first stage I have implemented the structure of the application.
 
-*To present the different categories I'm using UITableView, when the user interacts with the category, it shows all the corresponding content in a UICollectionView.
+***To present the different categories I'm using UITableView, when the user interacts with the category, it shows all the corresponding content in a UICollectionView.
 
-*Once you have selected the category, you will be able to see the detail of each element of the category.
+***Once you have selected the category, you will be able to see the detail of each element of the category.
 
 
 **For the second stage of application development, I am considering applying filters, sharing recipes through social networks, displaying more information in the detail view.**
