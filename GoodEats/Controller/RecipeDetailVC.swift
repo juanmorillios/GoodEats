@@ -12,10 +12,8 @@ class RecipeDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         recipeImg.image = UIImage(named: selectedRecipe.imageName)
         recipeTitle.text = selectedRecipe.title
         recipeInstructions.text = selectedRecipe.instructions
     }
-
 }
