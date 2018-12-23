@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.76144838333129883" blue="0.26858246326446533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icono_SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-H8-lt6">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5Q6-JZ-Sxd"/>
+                                    <constraint firstAttribute="width" constant="240" id="gMx-k5-ace"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16025123000144958" green="0.63182240724563599" blue="0.50472027063369751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OPq-H8-lt6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Eu2-r9-uQC"/>
+                            <constraint firstItem="OPq-H8-lt6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wha-A9-of2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -25,4 +38,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icono_SplashScreen" width="1024" height="1024"/>
+    </resources>
 </document>
