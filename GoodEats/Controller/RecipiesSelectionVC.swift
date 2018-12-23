@@ -17,6 +17,9 @@ class RecipiesSelectionVC: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.delegate = self
         collectionView.dataSource = self
         recipes = data.getRecipes(forCategoryTitle: selectedCategory)
+        
+        // Hide largeTitle in ColletionView and RecipeDetailView
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
